@@ -2,32 +2,20 @@
 // counter of coins
 var counter = 0
 
-// click action
-const coinDiv = document.getElementsByClassName('coin')[0]
-const blockDiv = document.getElementsByClassName('coin')[0]
+// divs
 const marioDiv = document.getElementsByClassName('mario')[0]
-
-var updateCounter = function() {
-    document.getElementById('counter').innerHTML = counter
-}
 
 var jump = function() {
     alert("Skaczemy");
-  marioDiv.classList.add('jump') 
-  blockDiv.classList.add('bounce')
-  coinDiv.classList.add('appear')
+    marioDiv.classList.add('jump')
 }
 
 var jumpEnd = function() {
     alert("Ladujemy");
-    marioDiv.classList.remove('jump') 
-    blockDiv.classList.remove('bounce')
-    coinDiv.classList.remove('appear')
     counter++
     alert(`Wyskakalismy juz ${counter}`);
-    updateCounter(counter)
-}
 
+}
 
 // add button actions
 const button = document.getElementById('jump')
