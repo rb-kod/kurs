@@ -18,7 +18,7 @@
       <h1>Not Fancy Mario Jump</h1>
       <div class="coin-counter">
         <img src="images/coin.png" alt="mario coin">
-        <span>?</span>
+        <span>2137</span>
       </div>
       <div class="inner-container">
         <div
@@ -28,7 +28,7 @@
         </div>
         <div
           class="block"
-          @animationend="removeAnimation"
+          id="block"
         >
           <img src="images/block.png" alt="mario block">
         </div>
@@ -38,7 +38,7 @@
           <img src="images/mario.png" alt="mario">
         </div>
         <div class="control">
-          <button>
+          <button id="jump">
             Jump
           </button>
         </div>
@@ -47,6 +47,7 @@
     </div>
 
   </div>
-
+  <!-- JavaScript -->
+  <script src="kurs.js"></script>
 </body>
 </html>
